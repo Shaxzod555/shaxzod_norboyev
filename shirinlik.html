@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shirinliklar Markazi</title>
+  <link rel="stylesheet" href="shirinlik.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">Shirinliklar Markazi</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Bosh sahifa</a></li>
+          <li><a href="#products">Mahsulotlar</a></li>
+          <li><a href="#about">Biz haqimizda</a></li>
+          <li><a href="#order">Buyurtma</a></li>
+          <li><a href="#contact">Bog‘lanish</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="home" class="section home-section">
+      <h2>Yangi va mazali shirinliklar!</h2>
+      <p>Bayramlaringizni unutilmas qiling, eng mazali tort va desertlar bizda.</p>
+      <a href="#order" class="btn-primary">Buyurtma berish</a>
+    </section>
+
+    <section id="products" class="section">
+      <h2>Mahsulotlarimiz</h2>
+      <div class="product-grid">
+        <span class="product-card">
+          <div>
+           <img src="r12.jpg" alt="Shokoladli Tort">
+          </div>
+          <h3>Shokoladli Tort</h3>
+          <p class="price">200 000 so'm</p>
+          <p class="desc">Yuqori sifatli shokoladdan tayyorlangan.</p>
+        </span>
+        <span class="product-card">
+          <div>
+           <img src="r11.png" alt="Vanil Tort">
+          </div>
+          <h3>Vanil Tort</h3>
+          <p class="price">15 000 so'm</p>
+          <p class="desc">Nozik vanil lazzati bilan, 1 kg.</p>
+        </span>
+        <span class="product-card">
+          <div>
+           <img src="r2.jpg" alt="Kapkeyk">
+          </div>
+          <h3>Kapkeyklar</h3>
+          <p class="price">15 000 so'm (dona)</p>
+          <p class="desc">Turli xil lazzatlar bilan.</p>
+        </span>
+        <span class="product-card">
+          <div>
+           <img src="chakchak.jpg" alt="Chak-chak">
+          </div>
+          <h3>Chak-chaklar</h3>
+          <p class="price">15 000 so'm (dona)</p>
+          <p class="desc">Makaronlar, rang-barang.</p>
+        </span>
+        <span class="product-card">
+          <div>
+           <img src="r7.jpg" alt="Biskvit">
+          </div>
+          <h3>Biskvit</h3>
+          <p class="price">30 000 so'm</p>
+          <p class="desc">Yumshoq va yengil biskvit, 1 kg.</p>
+        </span>
+        <span class="product-card">
+          <div>
+           <img src="meva.jpg" alt="">
+          </div>
+          <h3>Mevali tort</h3>
+          <p class="price">180 000 so'm</p>
+          <p class="desc">Juda yoqimli.</p>
+        </span>
+        <span class="product-card" >
+          <div>
+           <img src="paxlava.jpg" alt="Disert">
+          </div>
+          <h3>Paxlava</h3>
+          <p class="price">50 000 so'm</p>
+          <p class="desc">Yumshoq va yengil biskvit, 1 kg.</p>
+        </span>
+        <span class="product-card">
+          <div>
+           <img src="r8.jpg" alt="Biskvit">
+          </div>
+          <h3>Biskvit</h3>
+          <p class="price">30 000 so'm</p>
+          <p class="desc">Yumshoq va yengil biskvit, 1 kg.</p>
+        </span>
+        <span class="product-card">
+          <div>
+           <img src="r13.jpg" alt="Mevali tort">
+          </div>
+          <h3>Mevali tort</h3>
+          <p class="price">180 000 so'm</p>
+          <p class="desc">Yumshoq va yengil biskvit.</p>
+        </span>
+      </div>
+    </section>
+
+    <section id="about" class="section about-section">
+      <h2>Biz haqimizda</h2>
+      <p>“Shirinliklar Markazi” 2020-yildan buyon sifatli va yangi shirinliklar tayyorlashda yetakchi hisoblanadi. Biz har bir mijozning bayramini shirin va esda qolarli qilishga intilamiz.</p>
+      <p>Bizning shirinliklarimiz tabiatdan olingan eng yaxshi mahsulotlardan tayyorlanadi va har doim yangi retseptlar bilan boyitiladi va eng yuqori sifatdagi shirinliklar hisoblanadi.</p>
+    </section>
+
+    <section id="order" class="section order-section">
+      <h2>Buyurtma berish</h2>
+      <form action="#" method="post" class="order-form" novalidate>
+        
+        <div class="form-group">
+          <label for="name">Ismingiz <span class="required">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="To'liq ismingiz" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Telefon raqam <span class="required">*</span></label>
+          <input type="tel" id="phone" name="phone" required placeholder="+998 90 123 45 67" pattern="^\+998\s?\d{2}\s?\d{3}\s?\d{2}\s?\d{2}$" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email (ixtiyoriy)</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Yetkazib berish manzili <span class="required">*</span></label>
+          <textarea id="address" name="address" rows="2" placeholder="Manzilni kiriting" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="product">Mahsulotni tanlang <span class="required">*</span></label>
+          <select id="product" name="product" required>
+            <option value="" disabled selected>Mahsulotni tanlang</option>
+            <option value="Shokoladli Tort">Shokoladli Tort</option>
+            <option value="Vanil Tort">Vanil Tort</option>
+            <option value="Kapkeyk">Kapkeyk</option>
+            <option value="Makaronlar">Chak-chak</option>
+            <option value="Makaronlar">Paxlavalar</option>
+            <option value="Biskvit">Biskvit</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="quantity">Miqdori <span class="required">*</span></label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+        </div>
+
+        <div class="form-group">
+          <label for="payment">To‘lov usuli <span class="required">*</span></label>
+          <select id="payment" name="payment" required>
+            <option value="" disabled selected>To‘lov usulini tanlang</option>
+            <option value="Naqd">Naqd</option>
+            <option value="Plastik karta">Plastik karta</option>
+            <option value="Onlayn to‘lov">Onlayn to‘lov</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Qo‘shimcha izoh</label>
+          <textarea id="message" name="message" rows="3" placeholder="Qo‘shimcha ma’lumot..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Buyurtma berish</button>
+      </form>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <h2>Biz bilan bog‘laning</h2>
+      <p>Telefon: <a href="tel:+998888793555">+998 88 879 35 55</a></p>
+      <p>Email: <a href="mailto:info@shirinliklar.uz">info@shirinliklar.uz</a></p>
+      <p>Manzil: Qarshi shahri, Mustaqillik ko'chasi</p>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.8997082399513!2d69.24007351545633!3d41.31115120827952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bd5b17d5c17%3A0x2e08c7f494e69531!2sToshkent!5e0!3m2!1suz!2s!4v1686000000000!5m2!1suz!2s"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      
+    </div>
+  </footer>
+
+</body>
+</html>
